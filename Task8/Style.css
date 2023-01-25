@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Press+Start+2P&family=Roboto+Condensed:wght@300;400;700&display=swap');
+ 
+/* Task8 */
+html body{
+    height:87%;
+    font-size: 2rem;
+}
+body{
+    background-color: #333;
+    background-size: .75rem 100% 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+.grid{
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(16 ,1fr);
+    grid-gap: 2vmin;
+    justify-content: center;
+    align-items: center;
+}
+.items{
+    background-color: antiquewhite;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    grid-column: span 2;
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%,0 50%);
+    transform: scale(1);
+}
+.items:nth-child(17n+1){
+    grid-column: 2/ span 2;
+}
